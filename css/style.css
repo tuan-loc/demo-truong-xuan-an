@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0 20px 0;
+}
+
+.header-brand img {
+  width: 100px;
+}
+
+.header-brand h1 {
+  color: #fff;
+}
+
+.menu .nav {
+  z-index: 1000;
+}
+
+.menu {
+  background-image: url(../images/bg-menu.jpg);
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.menu .bg-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(30, 89, 62, 0.95);
+  z-index: -1;
+}
+
+.menu .bg-menu {
+  /* background-image: url(../images/menu-bg.png); */
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.menu .nav-pills .nav-link {
+  color: #fff;
+  border: 2px solid transparent;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.menu .nav-pills .nav-link.active,
+.menu .nav-pills .show > .nav-link {
+  border: 2px solid #fff;
+  color: #1e593e;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.menu .menu-list {
+  padding: 30px 0;
+}
+
+.menu .item {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.menu .item-image img {
+  max-width: 90px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+
+.menu .description {
+  flex: 1;
+  margin-top: 16px;
+}
+
+.menu .description .title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu .description .title .header {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.menu .description .title .dots {
+  flex: 1;
+  border-bottom: 2px dotted #fff;
+  margin: 0px 15px 0;
+  position: relative;
+  top: -15px;
+}
+
+.menu .description .title .price {
+  color: #fff;
+}
+
+.menu .description .title .sub-price {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.menu .sub-description {
+  margin-top: 8px;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.menu .sub-description p {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.menu .item-group {
+  margin-top: 50px;
+}
+
+.menu .item-group .big-title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.menu .item-group .sub-big-title {
+  font-size: 14px;
+  text-align: center;
+  font-style: italic;
+}
+
+.menu .item-group .medium-title {
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.menu .item-group .sub-title {
+  font-size: 14px;
+  margin-left: 35px;
+  font-style: italic;
+}
+
+.menu .item-group .sub-medium-title {
+  margin-left: 35px;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.tab-content {
+  padding: 0 200px;
+}
+
+.menu .notification {
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 100px;
+}
+
+.menu .notification i {
+  font-size: 12px;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 30px;
+}
+
+.owl-carousel.owl-theme .owl-dots {
+  position: inherit;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.owl-dots {
+  background: none;
+  display: block;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  background: transparent;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: #fff;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  opacity: 1;
+  transform: scale(1.3);
+  background-color: #c4f2e1;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  bottom: 0px;
+  font-size: 20px;
+  color: #1e593e;
+  border: 1px solid #c4f2e1;
+  padding: 5px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #c4f2e1;
+  display: block;
+}
+
+.owl-carousel .owl-nav button.owl-next span,
+.owl-carousel .owl-nav button.owl-prev span {
+  color: #1e593e;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background-color: #c4f2e1;
+  border-color: #c4f2e1;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  right: 0px;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  left: 0px;
+}
+
+.owl-carousel .owl-nav {
+  margin-top: 50px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1200px) {
+  .tab-content {
+    padding: 0 70px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .tab-content {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tab-content {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tab-content {
+    padding: 0;
+  }
+}
